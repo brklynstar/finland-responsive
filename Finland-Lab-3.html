@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finland</title>
   <style>
 
+body, html {
+  height: 100%;
+}
 
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
 }
 
-.grid-cell {
-    padding: 1rem;
-    background-image: cover;
-
-}
-
-h2,p {
-        padding: 0; 
-        margin: 0;
-    } 
-    
+  
 .dashboard {
     height: 600px;
     width: 800px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    grid-gap: 1em;
-    font-family: Helvetica, sans-serif;
-    color: white;
+    grid-gap: 15px;
     grid-template-areas: "h h h h"
                          "p w w w"
                          "d c g n";
+    grid-template-rows: 100px, 200px, 200px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
 
 
@@ -132,8 +126,10 @@ background-size: cover;
 
 <body>
   <div class="dashboard">
-    <h1 class="title">Finland</h1>
-    <h2 class="subtitle">NATO Member!</h2>
+    <header class="title">
+      <h1>Finland</h1>
+    <p >NATO Member!</p>
+    </header>
 
     <div class="population grid-cell">
         <h2>population: </h2>
