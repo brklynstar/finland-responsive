@@ -1,189 +1,212 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finland</title>
-  <style>
 
-body, html {
-  height: 100%;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finland</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-size: cover;
-}
+      body,
+      html {
+        height: 100%;
+      }
 
-  
-.dashboard {
-    max-width: 800px;
-    height: 600px;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-areas: "h h h h"
-                         "p w w w"
-                         "d c g n";
-    grid-template-rows: 100px, 200px, 200px;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-}
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-size: cover;
+        font-family: 'Lato', san-serif;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-transform: capitalize;
+      }
 
 
+      .dashboard {
+        max-width: 800px;
+        height: 600px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas:"h h h h"
+                            "p w w w"
+                            "d c g n";
 
-.title { 
-    grid-area: h;
-    text-align: center;
-    color: black;
-  
-}
-
-.population {
-    display: flex;
-    grid-area: p;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-image: url(finland-8.jpg);
-    background-size:cover ;
-   
-}
-
-.welcome {
-   
-    display: flex;
-    grid-area: w;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url(finland-2.jpg);
-    background-size: cover;
-    
-      
-}
-
-.gdp {
-    display: flex;
-    grid-area: d;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url(finland-3.jpg);
-    background-size: cover;
-    
-}
-
-.code{
-grid-area: c ;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-background-image: url(finland-4.jpg);
-background-size: cover;
-
-}
-
-.govt {
-grid-area: g ;
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-background-image: url(finland-1.jpg);
-background-size: cover;
-
-}
-
-.news {
-grid-area: n;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: flex-start;
-background-image: url(finland-5.jpg);
-background-size: cover;
-
-
-}
-
-.news button {
-    border-radius: .25em;
-    align-self: flex-end;
-    padding: 1em ;
-  
-}
-
-.grid-cell {
-  background-color: black;
-  padding: 1em;
-}
-
-
-@media only screen and (max-width: 800px) {
-  .dashboard {
-    grid-template-areas: "h h h"
-                         "p p w"
-                         "d d d"
-                         "w g g";
-    grid-template-rows: 100px 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  
-  }
-}
+        grid-template-rows: 100px, 200px, 200px;
+        grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+      }
 
 
 
+      .title {
+        grid-area: h;
+        text-align: center;
+        color: black;
+
+      }
+
+      .population {
+        display: flex;
+        grid-area: p;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url(finland-8.jpg);
+        background-size: cover;
+
+      }
+
+      .welcome {
+
+        display: flex;
+        grid-area: w;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-image: url(finland-2.jpg);
+        background-size: cover;
 
 
-  </style>
+      }
 
-</head>
+      .gdp {
+        display: flex;
+        grid-area: d;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-image: url(finland-3.jpg);
+        background-size: cover;
 
-<body>
-  <div class="dashboard">
-    <header class="title">
-      <h1>Finland</h1>
-    <p >NATO Member!</p>
-    </header>
+      }
 
-    <div class="population grid-cell">
+      .code {
+        grid-area: c;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url(finland-4.jpg);
+        background-size: cover;
+
+      }
+
+      .govt {
+        grid-area: g;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url(finland-1.jpg);
+        background-size: cover;
+
+      }
+
+      .news {
+        grid-area: n;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-image: url(finland-5.jpg);
+        background-size: cover;
+
+
+      }
+
+      .news button {
+        border-radius: .25em;
+        align-self: flex-end;
+        padding: 1em;
+
+      }
+
+      .grid-cell {
+        background-color: black;
+        padding: 1em;
+      }
+
+
+      @media only screen and (max-width: 800px) {
+        .dashboard {
+          grid-template-areas:  "h h h"
+                                "p p c"
+                                "d d d"
+                                "w g g"
+                                "n n n";
+          grid-template-rows: 100px 200px 200px 200px;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+
+        }
+      }
+
+
+      @media only screen and (max-width: 500px) {
+        .dashboard {
+          grid-template-areas:"h h"
+                              "p c"
+                              "w g"
+                              "d d"
+                              "n n";
+          grid-template-rows: 100px 200px 200px 200px;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <header class="title">
+        <h1>Finland</h1>
+        <p>NATO Member!</p>
+      </header>
+
+      <div class="population grid-cell">
         <h2>population: </h2>
         <p>5,536,146</p>
-    </div>
-    
-    <div class="welcome grid-cell">
-      <h2>Welcome</h2>
-      <p>Natural Resources, Economic Initiatives, Community Spaces</p>
+      </div>
+
+      <div class="welcome grid-cell">
+        <h2>Welcome</h2>
+        <p>Natural Resources, Economic Initiatives, Community Spaces</p>
+      </div>
+
+      <div class="gdp grid-cell">
+        <h2>GDP</h2>
+        <p>257 billion</p>
+      </div>
+
+      <div class="code grid-cell">
+        <h2>Calling Code</h2>
+        <p>+ 358</p>
+      </div>
+
+      <div class="govt grid-cell">
+        <h2>Government</h2>
+        <p>Unitary parliamentary republic</p>
+      </div>
+
+      <div class="news grid-cell">
+        <h2>News</h2>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="name" />
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="email" />
+        <button>Send</button>
+      </div>
+
     </div>
 
-    <div class="gdp grid-cell">
-      <h2>GDP</h2>
-      <p>257 billion</p>
-    </div>
+  </body>
 
-    <div class="code grid-cell">
-      <h2>Calling Code</h2>
-      <p>+ 358</p>
-    </div>
-
-    <div class="govt grid-cell">
-      <h2>Government</h2>
-      <p>Unitary parliamentary republic</p>
-    </div>
-
-    <div class="news grid-cell">
-      <h2>News</h2>
-      <label for="name">Name:</label>
-      <input id="name" type="text" placeholder="name"/>
-      <label for="email">Email:</label>
-      <input id="email" type="email" placeholder="email"/>
-      <button>Send</button>
-    </div>
-
-  </div>
-  
-</body>
 </html>
